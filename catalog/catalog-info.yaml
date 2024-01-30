@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nl-customer-profile-maven
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=nl-customer-profile-maven"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+  providesApis:
+    - nl-customer-profile-maven
